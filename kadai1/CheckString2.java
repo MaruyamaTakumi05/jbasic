@@ -1,22 +1,24 @@
-public class SwitchSample {
+import java.util.Scanner;
+
+public class CheckString2 {
 	public static void main(String[] args) {
 
 		Scanner zyouken = new Scanner(System.in);
 		System.out.print("色を入力して下さい：");
 
-		int dice = 2;
+		String dice = zyouken.next();
 		switch (dice) {
-		case 1:
-			System.out.println("大吉です");
+		case "red":
+			System.out.println("赤です");
 			break;
-		case 2:
-			System.out.println("小吉です");
+		case "green":
+			System.out.println("緑です");
 			break;
-		case 3:
-			System.out.println("凶です");
+		case "blue":
+			System.out.println("青です");
 			break;
 		default:
-			System.out.println("吉です");
+			System.out.println("他の色を入力して下さい");
 			break;
 		}
 	}
